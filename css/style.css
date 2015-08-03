@@ -1,0 +1,260 @@
+/*
+ *
+ * Implementing Responsive Design Without a Framework (based on Bootstrap)
+ *
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+header, footer {
+    display: block;
+}
+h1, h2, h3, h4 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+h1, h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+p {
+    margin: 10px 0;
+}
+img {
+  vertical-align: middle;
+}
+
+/*
+ *
+ * Classes
+ *
+ */
+
+.project {
+    min-width: 100%;
+    padding-bottom: 15px;
+}
+.shadow {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Classes */
+.header {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.header-logo {
+    margin-top: 25px;
+}
+.header-name {
+    font-family: 'Lato', sans-serif; font-weight: 300;
+    font-size: 30px;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* Footer Classes */
+.footer {
+    border-top: 1px solid #aaa;
+    padding: 20px;
+}
+.footer-link {
+    color: #444;
+}
+.footer-link:hover {
+    color: #aaa;
+}
+
+/* Text Classes */
+.featured {
+    margin: 10px 0 15px 0;
+    color: #aaa;
+    font-size: 26px;
+}
+
+/* Image Classes */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.img-rounded {
+    border-radius: 6px;
+}
+.modalImg:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/*
+ *
+ * Grid System
+ *
+ */
+
+.container:before,
+.container:after,
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after {
+    clear: both;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-4, .col-8, .col-12 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-12 {
+    width: 100%;
+}
+.col-8 {
+    width: 66.66666667%;
+}
+.col-4 {
+    width: 33.33333333%;
+}
+
+/*
+ *
+ * Media Sizes
+ *
+ */
+
+@media (min-width: 500px) {
+    .header-name {
+        font-size: 34px;
+    }
+    .featured {
+        font-size: 30px;
+    }
+    .project {
+        min-width: 50%;
+    }
+    h3 {
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+    .header-name {
+        font-size: 52px;
+    }
+    .project {
+        min-width: 33%;
+    }
+}
+@media (min-width: 990px) {
+    .container {
+        width: 970px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*
+ *
+ * Box Shadow (Effect 8 CSS-Tricks)
+ *
+ */
+
+.effect8
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+}
+.effect8:before, .effect8:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.3);
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
