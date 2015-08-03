@@ -52,16 +52,7 @@ img {
   vertical-align: middle;
 }
 
-/*
- *
- * Classes
- *
- */
 
-.project {
-    min-width: 100%;
-    padding-bottom: 15px;
-}
 .shadow {
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
        -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -96,6 +87,17 @@ header {
   white-space: nowrap;
 }
 
+/* Hero Section */
+.hero {
+    margin-bottom: 25px;
+}
+
+/* Projects */
+.project {
+    min-width: 100%;
+    padding-bottom: 15px;
+}
+
 /* Footer Classes */
 footer {
     border-top: 1px solid #aaa;
@@ -106,13 +108,6 @@ footer {
 }
 .footer-link:hover {
     color: #ea232c;
-}
-
-/* Text Classes */
-.featured {
-    margin: 10px 0 15px 0;
-    color: #aaa;
-    font-size: 26px;
 }
 
 /* Image Classes */
@@ -215,9 +210,6 @@ footer {
     .header-logo {
         width: 135px;
         height: 135px;
-    }
-    .featured {
-        font-size: 30px;
     }
     .project {
         min-width: 50%;
