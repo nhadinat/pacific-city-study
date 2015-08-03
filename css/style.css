@@ -184,9 +184,11 @@ nav > ul {
 }
 nav > ul > li {
     display: inline;
+    float: right;
 }
 nav > ul > li > a {
     color: #54969f;
+    display: block;
 }
 nav > ul > li > a:hover {
     color: #ea232c;
