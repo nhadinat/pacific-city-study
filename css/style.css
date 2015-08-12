@@ -130,6 +130,12 @@ p {
 img {
   vertical-align: middle;
 }
+a {
+  color: #54969f;
+}
+a:hover {
+  color: #ea232c;
+}
 .shadow {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -189,12 +195,8 @@ nav > ul > li {
   float: right;
 }
 nav > ul > li > a {
-  color: #54969f;
   display: block;
   padding: 0 20px 0 20px;
-}
-nav > ul > li > a:hover {
-  color: #ea232c;
 }
 
 /* Hero Section */
@@ -210,12 +212,6 @@ nav > ul > li > a:hover {
 /* Footer Classes */
 footer {
   padding: 25px;
-}
-footer a {
-  color: #54969f;
-}
-footer a:hover {
-  color: #ea232c;
 }
 
 /*
