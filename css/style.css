@@ -15,16 +15,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.container:before,
-.container:after,
-.row:before,
-.row:after {
+.container:before, .container:after, .row:before, .row:after {
   content: " ";
   display: table;
 }
-.container:after,
-.container-fluid:after,
-.row:after {
+.container:after, .row:after {
   clear: both;
 }
 .container {
@@ -100,10 +95,8 @@ header, footer {
   display: block;
 }
 h1, h2, h3, h4 {
-  font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
 }
 h1, h2 {
   margin-top: 20px;
