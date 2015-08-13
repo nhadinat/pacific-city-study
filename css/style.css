@@ -184,11 +184,11 @@ nav > ul {
 }
 nav > ul > li {
   display: inline;
-  float: right;
 }
 nav > ul > li > a {
-  display: block;
   padding: 0 20px 0 20px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 /* Hero Section */
